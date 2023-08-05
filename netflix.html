@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>netflix clone</title>
+	<link rel="stylesheet" type="text/css" href="netflix.css">
+	<script src="https://kit.fontawesome.com/9eab89dd1b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div class="content">
+		<div class="container">
+			<div class="header">
+				<div class="title">
+					<img src="images/logo.jpg">
+				</div>
+				<div class="signup">
+					<div>
+						<button class="lang-btn" id="btn"><i class="fas fa-globe"></i>English <i class="fas fa-sort-down"></i></button>
+						<button>Sign in</button>
+					</div>
+				</div>
+			</div>
+			<div class="mainbody">
+				<div class="intro-text">
+					<h1>Unlimited movies, TV<br>shows and more</h1>
+					<p>Watch anywhere. Cancel anytime.</p>
+					<h3>Ready to watch? Enter your email to create or restart your membership.</h3>
+					<form id="form1">
+						<input type="text" name="email" placeholder="Email address" required>
+						<button>Get Started<i class="fas fa-angle-right"></i></button>
+					</form>
+				</div>
+			</div>
+			<div class="about">
+				<div class="about-left">
+					<h1>Enjoy on your TV</h1>
+					<p>Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</p>
+				</div>
+				<div class="about-right">
+					<img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/cards/v2.1/enjoyOnTv/en.png">
+				</div>
+			</div>
+				<div class="about about2">
+					<div class="about-right">
+						<img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/cards/v2.1/watchEverywhere/en.png">
+					</div>
+				<div class="about-left">
+					<h1>Watch everywhere</h1>
+					<p>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
+				</div> 
+			</div>
+		<div class="about">
+				<div class="about-left">
+					<h1>Create profiles for kids</h1>
+					<p>Send children on adventures with their favourite characters in a space made just for them—free with your membership.</p>
+				</div>
+				<div class="about-right">
+					<img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/cards/v2.1/kids/en-GB.png">
+				</div>
+		</div>
+		<div class="about about2">
+			<div class="about-right">
+					<img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/cards/v2.1/download/en.png">
+				</div>
+			<div class="about-left">
+					<h1>Download your shows to watch offline</h1>
+					<p>Save your favourites easily and always have something to watch.</p>
+			</div>
+		</div>
+		<div class="query">
+				<h2>Frequently Asked Questions</h2>
+				<!-- 1st question open -->
+						<div class="Questions">
+
+							<div>What is Netflix?</div>
+							<div><i class="fa-solid fa-plus" onclick="opentab('i1')" id="i1"></i>
+								<i class="fas fa-times" onclick="closetab('i1')" id="c1"></i>
+							</div>
+						</div>
+						<div class="answer" id="p1">
+							<p>Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries and more – on thousands of internet-connected devices.<br><br>
+
+							You can watch as much as you want, whenever you want, without a single ad – all for one low monthly price. There's always something new to discover, and new TV shows and movies are added every week!</p>
+						</div>
+					<!-- 1st question close -->
+					<!-- 2nd open -->
+					<div class="Questions">
+
+							<div>How much does Netflix cost?</div>
+							<div><i class="fa-solid fa-plus" onclick="opentab('i2')" id="i2"></i>
+								<i class="fas fa-times" onclick="closetab('i2')" id="c2"></i>
+							</div>
+						</div>
+						<div class="answer" id="p2">
+							<p>Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee. Plans range from ₹ 149 to ₹ 649 a month. No extra costs, no contracts.</p>
+						</div>
+
+					<!-- 2nd close -->
+					<!-- 3rd open -->
+					<div class="Questions">
+
+							<div>Where can I Watch?</div>
+							<div><i class="fa-solid fa-plus" onclick="opentab('i3')" id="i3"></i>
+								<i class="fas fa-times" onclick="closetab('i3')" id="c3"></i>
+							</div>
+						</div>
+						<div class="answer" id="p3">
+							<p>Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web at netflix.com from your personal computer or on any internet-connected device that offers the Netflix app, including smart TVs, smartphones, tablets, streaming media players and game consoles.<br><br>
+
+							You can also download your favourite shows with the iOS, Android, or Windows 10 app. Use downloads to watch while you're on the go and without an internet connection. Take Netflix with you anywhere.</p>
+						</div>
+					<!-- 3rd close -->
+					<!-- 4th open -->
+					<div class="Questions">
+
+							<div>How do I cancel?</div>
+							<div><i class="fa-solid fa-plus" onclick="opentab('i4')" id="i4"></i>
+								<i class="fas fa-times" onclick="closetab('i4')" id="c4"></i>
+							</div>
+						</div>
+						<div class="answer" id="p4">
+							<p>Netflix is flexible. There are no annoying contracts and no commitments. You can easily cancel your account online in two clicks. There are no cancellation fees – start or stop your account anytime.</p>
+						</div>
+					<!-- 4th close -->
+					<!-- 5th open -->
+					<div class="Questions">
+
+							<div>What can I watch on Netflix?</div>
+							<div><i class="fa-solid fa-plus" onclick="opentab('i5')" id="i5"></i>
+								<i class="fas fa-times" onclick="closetab('i5')" id="c5"></i>
+							</div>
+						</div>
+						<div class="answer" id="p5">
+							<p>Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning Netflix originals, and more. Watch as much as you want, anytime you want.</p>
+						</div>
+					<!-- 5th close -->
+					<!-- 6th open -->
+					<div class="Questions">
+
+							<div>Is Netflix good for goods?</div>
+							<div><i class="fa-solid fa-plus" onclick="opentab('i6')" id="i6"></i>
+								<i class="fas fa-times" onclick="closetab('i6')" id="c6"></i>
+							</div>
+						</div>
+						<div class="answer" id="p6">
+							<p>The Netflix Kids experience is included in your membership to give parents control while kids enjoy family-friendly TV shows and films in their own space.
+								<br><br>
+							Kids profiles come with PIN-protected parental controls that let you restrict the maturity rating of content kids can watch and block specific titles you don’t want kids to see.</p>
+						</div>
+					<!-- 6th close -->
+			</div>
+			<div class="contact">
+
+				<h3>Ready to watch? Enter your email to create or restart your membership.</h3>
+					<form id="form1">
+						<input type="text" name="email" placeholder="Email address" required>
+						<button>Get Started<i class="fas fa-angle-right"></i></button>
+					</form>
+			</div>
+			<div class="footer">
+				<p>Questions? Call <a href="#">000-800-919-1694</a></p>
+				<div class="links">
+					<div class="link1">
+
+						<ul>
+							<li><a href="#">FAQ</a></li>
+							<li><a href="#">Speed Test</a></li>
+							<li><a href="#">media Center</a></li>
+							<li><a href="#">Ways to Watch</a></li>
+							<li><a href="#">Cookie preferences</a></li>
+						</ul>
+						
+					</div>
+					<div class="link1">
+						<ul>
+							<li><a href="#">Help Centre</a></li>
+							<li><a href="#">Investor Relations</a></li>
+							<li><a href="#">Terms of use </a></li>
+							<li><a href="#">Corporate information</a></li>
+							<li><a href="#">legal notices</a></li>
+						</ul>
+					</div>
+					<div class="link1">
+						<ul>
+							<li><a href="#">Account</a></li>
+							<li><a href="#">Jobs</a></li>
+							<li><a href="#">Privacy</a></li>
+							<li><a href="#">Contact us</a></li>
+							<li><a href="#">Only on Netflix</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class=" contact signup" style="color: grey;">
+					<div>
+						<button class="lang-btn" id="btn"><i class="fas fa-globe"></i>English <i class="fas fa-sort-down"></i></button>
+						<p style="margin-top: 20px;">Netflix india</p>
+					</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+	<!-- scrpit  -->
+	<script type="text/javascript">
+
+		function opentab(id)
+		{
+			if(id=='i1')
+			{
+				let pid=document.getElementById('p1');
+				pid.style.display="block";
+				let plus=document.getElementById('i1')
+				plus.style.visibility="hidden";
+				let close=document.getElementById('c1')
+				close.style.visibility="visible";
+			}
+			else if(id=='i2')
+			{
+				let pid=document.getElementById('p2');
+				pid.style.display="block";
+				let plus=document.getElementById('i2')
+				plus.style.visibility="hidden";
+				let close=document.getElementById('c2')
+				close.style.visibility="visible";
+
+			}
+			else if(id=='i3')
+			{
+				let pid=document.getElementById('p3');
+				pid.style.display="block";
+				let plus=document.getElementById('i3')
+				plus.style.visibility="hidden";
+				let close=document.getElementById('c3')
+				close.style.visibility="visible";
+
+			}
+			else if(id=='i4')
+			{
+				let pid=document.getElementById('p4');
+				pid.style.display="block";
+				let plus=document.getElementById('i4')
+				plus.style.visibility="hidden";
+				let close=document.getElementById('c4')
+				close.style.visibility="visible";
+
+			}
+			else if(id=='i5')
+			{
+				let pid=document.getElementById('p5');
+				pid.style.display="block";
+				let plus=document.getElementById('i5')
+				plus.style.visibility="hidden";
+				let close=document.getElementById('c5')
+				close.style.visibility="visible";
+
+			}
+			else if(id=='i6')
+			{
+				let pid=document.getElementById('p6');
+				pid.style.display="block";
+				let plus=document.getElementById('i6')
+				plus.style.visibility="hidden";
+				let close=document.getElementById('c6')
+				close.style.visibility="visible";
+
+			}
+
+		}
+		function closetab(id)
+		{
+			if(id=='i1')
+			{
+				let pid=document.getElementById('p1');
+				pid.style.display="none";
+				let plus=document.getElementById('i1')
+				plus.style.visibility="visible";
+				let close=document.getElementById('c1')
+				close.style.visibility="hidden";
+			}
+			else if(id=='i2')
+			{
+				let pid=document.getElementById('p2');
+				pid.style.display="none";
+				let plus=document.getElementById('i2')
+				plus.style.visibility="visible";
+				let close=document.getElementById('c2')
+				close.style.visibility="hidden";
+
+			}
+			else if(id=='i3')
+			{
+				let pid=document.getElementById('p3');
+				pid.style.display="none";
+				let plus=document.getElementById('i3')
+				plus.style.visibility="visible";
+				let close=document.getElementById('c3')
+				close.style.visibility="hidden";
+
+			}
+			else if(id=='i4')
+			{
+				let pid=document.getElementById('p4');
+				pid.style.display="none";
+				let plus=document.getElementById('i4')
+				plus.style.visibility="visible";
+				let close=document.getElementById('c4')
+				close.style.visibility="hidden";
+
+			}
+			else if(id=='i5')
+			{
+				let pid=document.getElementById('p5');
+				pid.style.display="none";
+				let plus=document.getElementById('i5')
+				plus.style.visibility="visible";
+				let close=document.getElementById('c5')
+				close.style.visibility="hidden";
+
+			}
+			else if(id=='i6')
+			{
+				let pid=document.getElementById('p6');
+				pid.style.display="none";
+				let plus=document.getElementById('i6')
+				plus.style.visibility="visible";
+				let close=document.getElementById('c6')
+				close.style.visibility="hidden";
+
+			}
+
+		}
+	</script>
+</body>
+</html>
